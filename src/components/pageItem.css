@@ -1,0 +1,36 @@
+a {
+  transition: transform 0.1s ease-in-out;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a p {
+  color: #341109;
+}
+
+a:hover p {
+  color: #000000;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.description {
+  font-size: 18px;
+}
+
+.list-group-item {
+  background-color: #b0e5f4;
+  margin: 0.5em 1em;
+}
+
+.list-group-item:hover {
+  background-color: #49afcc;
+}

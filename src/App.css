@@ -1,0 +1,56 @@
+.AppBefore {
+  text-align: center;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color: #f2f7f2
+}
+
+.AppAfter {
+  text-align: center;
+  background-color: #f2f7f2;
+}
+
+.input {
+  width: 10%;
+  height: 3%;
+  padding: 0 0.5em;
+  margin: 1em 0;
+}
+
+.input[type=text] {
+  border: 3px solid #B83214;
+  border-radius: 1em;
+  transition: 0.4s ease-in-out;
+  font-size: 1em;
+}
+
+.input[type=text]:focus {
+  border: 3px solid #341109;
+  width: 45%;
+  height: 7%;
+  font-size: 2em;
+  outline:none;
+}
+
+.button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0.2em;
+  background-color: #bec1f4;
+  border: 2px solid #822B17;
+  border-radius: 1em;
+  outline:none;
+}
+
+.button:hover {
+  background-color:#727af9;
+}
+
+.random{
+  margin: 0.2em;
+  padding: 0.2em;
+  font-size: 1em;
+  border: 2px solid #B83214;
+}

@@ -70,6 +70,10 @@ class App extends Component {
 
     return (
       <div className="landing-wrapper">
+        <div className = 'branding'>
+          <p>Created by <a href = 'https://twitter.com/kris_bogdanov' target="_blank" without rel="noopener noreferrer">Kris Bogdanov</a></p>
+        </div>
+
         <input
           className="input animated fadeInUp"
           onKeyPress={this.handleEnter}

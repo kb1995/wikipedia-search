@@ -1,3 +1,17 @@
+.list-group-item {
+
+  margin: 0.5em 1em;
+  border: none;
+
+  background-color: #BCC0D1;
+
+  transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #526AD1;
+}
+
 a {
   transition: transform 0.1s ease-in-out;
 }
@@ -24,13 +38,4 @@ a:hover p {
 
 .description {
   font-size: 18px;
-}
-
-.list-group-item {
-  background-color: #b0e5f4;
-  margin: 0.5em 1em;
-}
-
-.list-group-item:hover {
-  background-color: #49afcc;
 }

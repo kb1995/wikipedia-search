@@ -39,42 +39,13 @@ class App extends Component {
     }
   };
 
-  InitialButton = () => {
-    this.setState({
-      showInput: true
-    });
-  };
-
   render() {
-    // before first search is done
-    if (this.state.showInput && this.state.isLoaded === false) {
-      return (
-        <div className="AppBefore">
-          <input
-            className="input animated bounceInDown"
-            onKeyPress={this.handleEnter}
-            type="text"
-            onChange={this.handleInput}
-            value={this.state.text}
-            placeholder="Wikipedia..."
-          />
-          <a
-            className="animated bounceInDown"
-            href="https://en.wikipedia.org/wiki/Special:Random"
-            target="_blank"
-          >
-            <button className="random">Random page</button>
-          </a>
-        </div>
-      );
-    }
-
     // after the first search is completed
     if (this.state.isLoaded && this.state.results !== []) {
       return (
-        <div className="AppAfter ">
+        <div className="AppAfter">
           <input
-            className="input animated fadeIn"
+            className="animated fadeIn"
             onKeyPress={this.handleEnter}
             type="text"
             onChange={this.handleInput}
@@ -87,7 +58,7 @@ class App extends Component {
             href="https://en.wikipedia.org/wiki/Special:Random"
             target="_blank"
           >
-            <button className="random">Random page</button>
+            <button className="btn btn-primary">Random page</button>
           </a>
           <PageList
             items={this.state.results}
@@ -98,10 +69,22 @@ class App extends Component {
     }
 
     return (
-      <div className="AppBefore">
-        <button className="button" onClick={this.InitialButton}>
-          Start Learning!
-        </button>
+      <div className="landing-wrapper">
+        <input
+          className="input animated bounceInDown"
+          onKeyPress={this.handleEnter}
+          type="text"
+          onChange={this.handleInput}
+          value={this.state.text}
+          placeholder="Search on Wikipedia"
+        />
+        <a
+          className="animated bounceInDown"
+          href="https://en.wikipedia.org/wiki/Special:Random"
+          target="_blank"
+        >
+          <button className="btn btn-primary">Random page</button>
+        </a>
       </div>
     );
   }

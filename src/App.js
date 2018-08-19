@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import $ from "jquery";
-import PageList from "./components/pageList";
+import PageList from './components/PageList/pageList'
 
 const searchURL =
   "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=";
@@ -71,7 +71,7 @@ class App extends Component {
     return (
       <div className="landing-wrapper">
         <input
-          className="input animated bounceInDown"
+          className="input animated fadeInUp"
           onKeyPress={this.handleEnter}
           type="text"
           onChange={this.handleInput}
@@ -79,7 +79,7 @@ class App extends Component {
           placeholder="Search on Wikipedia"
         />
         <a
-          className="animated bounceInDown"
+          className="animated fadeInUp"
           href="https://en.wikipedia.org/wiki/Special:Random"
           target="_blank"
         >

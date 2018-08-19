@@ -1,5 +1,6 @@
 import React from 'react'
-import PageItem from './pageItem'
+import PageItem from '../PageItem/pageItem'
+import "./pageList.css";
 
 const PageList = (props) => {
     const Pageitem = props.heading.map((item, idx) => {return (<PageItem

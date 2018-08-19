@@ -57,6 +57,7 @@ class App extends Component {
             className="animated fadeIn"
             href="https://en.wikipedia.org/wiki/Special:Random"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <button className="btn btn-primary">Random page</button>
           </a>
@@ -71,7 +72,7 @@ class App extends Component {
     return (
       <div className="landing-wrapper">
         <div className = 'branding'>
-          <p>Created by <a href = 'https://twitter.com/kris_bogdanov' target="_blank" without rel="noopener noreferrer">Kris Bogdanov</a></p>
+          <p>Created by <a href = 'https://twitter.com/kris_bogdanov' target="_blank" rel="noopener noreferrer">Kris Bogdanov</a></p>
         </div>
 
         <input
@@ -86,6 +87,7 @@ class App extends Component {
           className="animated fadeInUp"
           href="https://en.wikipedia.org/wiki/Special:Random"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <button className="btn btn-primary">Random page</button>
         </a>
